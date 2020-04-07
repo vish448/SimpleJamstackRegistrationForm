@@ -2,5 +2,8 @@
   "name": "jamstack-registration",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "functions": "cd functions && npm i && cd .."
+  },
   "license": "MIT"
 }
