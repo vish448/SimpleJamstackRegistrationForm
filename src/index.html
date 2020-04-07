@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JamStack Registration</title>
     <style>
-        body {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        h1 {
-            text-align: center;
-        }
-        form{
-            margin: 2rem auto;
-            max-width: 350px;
-        }
-        label,input {
-            display: block;
-            width: 100%;
-        }
-        label {
-            margin-top:  0.5rem;
-        }
-        input {
-            font-size: 1rem;
-            padding: 0.25rem;
-        }
-        button {
-            margin-top: 0.25rem;
-            padding: 0.5rem;
-            background-color:navy;
-            font-weight: bold;
-            color: white;
-            font-size: 1.5rem;
-            border:none;
-        }
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        margin: 2rem auto;
+        max-width: 350px;
+      }
+      label,
+      input {
+        display: block;
+        width: 100%;
+      }
+      label {
+        margin-top: 0.5rem;
+      }
+      input {
+        font-size: 1rem;
+        padding: 0.25rem;
+      }
+      button {
+        margin-top: 0.25rem;
+        padding: 0.5rem;
+        background-color: navy;
+        font-weight: bold;
+        color: white;
+        font-size: 1.5rem;
+        border: none;
+      }
 
-
+      .hidden {
+        display: none;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>JamStack Registration</h1>
 
-    <form action=""  data-netlify="true" name="registration">
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="firstname"> 
+    <form action="" data-netlify="true" netlify-honeypot="bot-field" name="registration">
+      <label for="firstname">First Name</label>
+      <input type="text" name="firstname" id="firstname" />
 
-        <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname">
+      <label for="lastname">Last Name</label>
+      <input type="text" name="lastname" id="lastname" />
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">   
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
 
-        <button type="submit">Register</button>
-        
+      <button type="submit">Register</button>
+
+      <p class="hidden">
+        <label
+          >Don’t fill this out if you're human: <input name="bot-field"
+        /></label>
+      </p>
     </form>
-</body>
+  </body>
 </html>
