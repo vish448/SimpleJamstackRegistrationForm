@@ -1,2 +1,5 @@
 # Local Netlify folder
 .netlify
+nod_modules
+functions/node_modules
+.netlify

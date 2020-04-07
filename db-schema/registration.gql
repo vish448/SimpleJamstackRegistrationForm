@@ -1,0 +1,8 @@
+type registration {
+    name: String!
+    email: String!
+}
+
+type Query {
+    allregistrations: [registration!]!
+}
